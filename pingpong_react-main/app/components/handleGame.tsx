@@ -51,12 +51,12 @@ export default function HandleSticks(){
             <div 
                 ref={leftStickRef} 
                 style={{top: leftStick}} 
-                className='w-1 h-[50px] bg-black absolute z-[99] left-3'>
+                className='w-2 h-[50px] bg-black absolute z-[99] left-3'>
             </div>
             <div 
                 ref={rightStickRef} 
                 style={{top: rightStick}} 
-                className="w-1 h-[50px] bg-black absolute z-[99] right-3">
+                className="w-2 h-[50px] bg-black absolute z-[99] right-3">
             </div>
             <HandleKeyDown onKeyDown={handleKeyDown}/>
             <HandleBall sticksRef={sticksRef}/>

@@ -14,7 +14,7 @@ export interface Score {
   leftPlayer: number;
   rightPlayer: number;
 }
-export default function HandleBall({ sticksRef }: { sticksRef: [] }) {
+export default function HandleBall({ sticksRef }: { sticksRef: [] }): React.FC {
   const {
     gameAreaRef,
     pauseGame,

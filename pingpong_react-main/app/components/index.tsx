@@ -7,9 +7,10 @@ import socket from '@/socket-connection';
 
 export const GameContext = createContext();
 
-const PinPonGame = ():JSX.Element => {
+const PinPonGame = ({getNameHandler}):JSX.Element => {
     const gameAreaRef = useRef<HTMLDivElement>(null);
-
+    const [fuser, SetFUser]  = useState<any>("");
+    const [suser, SetSUser]  = useState<any>("");
     const [pauseGame, setPauseGame] = useState<boolean>(true);
     const [restartGame, setRestartGame] = useState<boolean>(false);
     const [firstPlay, setFirstPlay] = useState<undefined>(undefined);
@@ -25,7 +26,7 @@ const PinPonGame = ():JSX.Element => {
 //     })
 //    }, []);
 //    const position = {x:10,y:10}
-//     const onPlayGame = () => {
+//     const onPlayGame =  () => {
 //         socket.emit("startGame",position);
 //         console.log("emitting")
 //     };
@@ -48,7 +49,19 @@ const PinPonGame = ():JSX.Element => {
                         onClick={() => setPauseGame(true)} />
                     <ButtonGame 
                         values={{class:'', content:'Play'}}
-                        onClick={() => setPauseGame(false)} />
+                        onClick={() => {
+                        if(fuser === ""){
+                            const name1 = prompt("Enter First User...");
+                            SetFUser(name1);
+                        }
+                        if(suser === ""){
+                            const name2 = prompt("Enter second name");
+                            SetSUser(name2);
+                        }  
+                        console.log(fuser, suser)
+                        getNameHandler({fname: fuser, sname:suser})  
+                        setPauseGame(false)
+                        } }/>
                     <ButtonGame 
                         values={{class:'', content:'Restart'}}
                         onClick={() => setRestartGame(prevRestart => !prevRestart)} />
