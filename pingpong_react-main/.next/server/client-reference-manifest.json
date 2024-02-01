@@ -131,14 +131,6 @@
       ],
       "async": false
     },
-    "C:\\Users\\SMART TECH\\Documents\\GitHub\\ping-pong\\pingpong_react-main\\app\\globals.css": {
-      "id": "(app-client)/./app/globals.css",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\SMART TECH\\Documents\\GitHub\\ping-pong\\pingpong_react-main\\app\\page.tsx": {
       "id": "(app-client)/./app/page.tsx",
       "name": "*",
@@ -146,14 +138,22 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
+    },
+    "C:\\Users\\SMART TECH\\Documents\\GitHub\\ping-pong\\pingpong_react-main\\app\\globals.css": {
+      "id": "(app-client)/./app/globals.css",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "C:\\Users\\SMART TECH\\Documents\\GitHub\\ping-pong\\pingpong_react-main\\app\\layout": [
-      "static/css/app/layout.css"
-    ],
     "C:\\Users\\SMART TECH\\Documents\\GitHub\\ping-pong\\pingpong_react-main\\app\\page": [
       "static/css/app/page.css"
+    ],
+    "C:\\Users\\SMART TECH\\Documents\\GitHub\\ping-pong\\pingpong_react-main\\app\\layout": [
+      "static/css/app/layout.css"
     ]
   }
 }

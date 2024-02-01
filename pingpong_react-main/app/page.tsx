@@ -14,7 +14,7 @@ export default function Home() {
   console.log(playerNames)
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className='flex justify-around items-center'><span>{playerNames?.fname}</span><span>{playerNames?.sname}</span></div>
+      <div className='flex justify-around items-center w-full'><span>FAIZAN</span><span>WASEEM</span></div>
       <PingPongGame getNameHandler={getName}/>
     </main>
   )
